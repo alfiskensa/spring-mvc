@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <table style="width:100%">
+  <tr>
+    <th>id</th>
+    <th>nim</th>
+    <th>nama</th>
+    <th>tanggal lahir</th>
+    <th>alamat</th>
+    <th>no telpon</th>
+    <th>jurusan</th>
+  </tr>
+  <tr th:each="mhs : ${list}">
+    <td th:text="${mhs.id}"></td>
+    <td th:text="${mhs.nim}"></td>
+    <td th:text="${mhs.nama}"></td>
+    <td th:text="${mhs.tglLahir}"></td>
+    <td th:text="${mhs.alamat}"></td>
+    <td th:text="${mhs.noTelp}"></td>
+    <td th:text="${mhs.jurusan.namaJurusan}"></td>
+  </tr>
+</table> 
+</body>
+</html>
